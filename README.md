@@ -1,13 +1,13 @@
-# Página pessoal
+# Personal Page
 
-Essa é a minha página de apresentação pessoal, em que eu falo um pouco de mim, da minha formação e do que tenho feito para evoluir profissionalmente.
+This is my personal presentation page, where I talk a little about myself, my background, and what I've done to grow professionally.
 
-## Informações:
+## Information:
 
-- Biografia
-- Habilidades
-- Formação Acadêmica
-- Projetos Pessoais
-- Contato
+- Biography
+- Skills
+- Academic Background
+- Personal Projects
+- Contact
 
-## Link do Site: [pietro-franca](https://pietro-franca.github.io)
+## Website Link: [pietro-franca](https://pietro-franca.github.io)
