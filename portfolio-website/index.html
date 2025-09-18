@@ -1,0 +1,298 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pietro Franca</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  </head>
+  <body class="d-flex flex-column min-vh-100 bg-dark text-font">
+
+    <!-- Header -->
+    <header>
+      <nav id="navbar-header" class="navbar navbar-expand-lg p-4 mb-lg-5">
+        <div class="container">
+          <a class="navbar-brand text-primary fw-semibold" href="#">Pietro</a>
+          <div class="navbar-items">
+            <ul class="d-flex list-unstyled gap-5 m-0 fw-medium">
+              <li class="nav-item text-tertiary">
+                <a class="nav-link active" href="#scrollspyHome">
+                  Home
+                </a>
+              </li>
+              <li class="nav-item text-light">
+                <a class="nav-link" href="#scrollspyAbout">
+                  About
+                </a>
+              </li>
+              <li class="nav-item text-light">
+                <a class="nav-link" href="#scrollspyProjects">
+                  Projects
+                </a>
+              </li>
+              <li class="nav-item text-light">
+                <a class="nav-link" href="#scrollspyContact">
+                  Contact
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Main -->
+    <main data-bs-spy="scroll" data-bs-target="#navbar-header" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" tabindex="0">
+
+      <section id="Home" class="container d-flex flex-grow-1 my-5">
+        <div class="row">
+          <div class="col-lg-6 order-lg-1 order-2 mt-5">
+            <h1 class="text-light fw-bold">I'm Pietro Franca</h1>
+            <h5 class="text-primary fw-semibold">Full-Stack Developer</h5>
+            <p class="text-light mt-4">
+              I am a developer passionate about software development and technology. 
+              Over time, I have discovered how much I enjoy creating useful and well-structured 
+              digital solutions that can make people's daily lives easier, streamline processes, and have a real impact.
+            </p>
+            <ul class="list-unstyled d-flex gap-2">
+              <li>
+                <a href="https://www.instagram.com/pietrofranca27/" class="btn fs-3 text-tertiary"
+                  aria-label="Instagram">
+                  <i class="bi bi-instagram"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/in/pietrofranca/" class="btn fs-3 text-tertiary"
+                  aria-label="Linkedin">
+                  <i class="bi bi-linkedin"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/pietro-franca/" class="btn fs-3 text-tertiary"
+                  aria-label="Github">
+                  <i class="bi bi-github"></i>
+                </a>
+              </li>
+            </ul>
+            <a href="./src/assets/resume-ptbr.pdf" download class="btn bg-primary text-dark fw-semibold rounded-4 px-4 py-2 mt-2"> Download Resume</a>
+          </div>
+
+          <div class="col-lg-6 order-lg-2 text-lg-end order-1 mb-5 text-center">
+            <img src="./src/assets/foto-perfil.jpg" width="420" height="420" class="rounded-circle object-fit-cover shadow" alt="">
+          </div>
+        </div>
+  
+      </section>
+
+      <br>
+
+      <section id="Education" class="mt-5 bg-tertiary">
+        <div class="container py-5">
+          <h1 class="text-lg-end text-center text-dark fw-bold">Education</h1>
+          <div class="d-lg-flex d-grid gap-3">
+            <p class="text-lg-end text-dark fs-5 mt-5 ms-5 order-lg-2 order-1">
+              I am a Computer Science undergraduate at UNESP - Rio Claro, 
+              where I have been consolidating concepts of algorithms, data 
+              structures, and software engineering. During my academic career, 
+              I have actively participated in extension and development projects, 
+              collaborating in teams, improving interpersonal skills, and exploring 
+              new technologies and frameworks.
+            </p>
+            <img src="./src/assets/unesp-logo.png" width="250" height="250"
+                class="object-fit-contain mx-auto my-4 order-lg-1 order-2"
+                alt="Logo UNESP">
+          </div>
+        </div>
+      </section>
+
+      <section id="Academic Groups" class="bg-blue-400">
+        <div class="container py-5">
+          <h1 class="text-lg-start text-center text-dark fw-bold py-4">Academic Groups</h1>
+          <div class="cards d-md-flex d-grid gap-5 justify-content-around p-5">
+            <div class="card rounded-4 bg-tertiary">
+              <img src="./src/assets/rise-logo.webp" class="m-3 rounded-4" alt="Logo Rise">
+              <div class="card-body">
+                <p class="card-text text-dark">
+                  RISE is a space for discussion and analysis of information security topics.
+                </p>
+              </div>
+            </div>
+            <div class="card rounded-4 bg-tertiary">
+              <img src="./src/assets/logo-g3x.png" class="m-3 rounded-4" alt="Logo Rise">
+              <div class="card-body">
+                <p class="card-text text-dark">
+                  G3X is dedicated to researching and creating games
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="Academic Projects" class="bg-blue-500">
+        <div class="container py-5">
+          <h1 class="text-lg-end text-center text-dark fw-bold py-4">Academic Projects</h1>
+          <div class="cards d-lg-flex d-grid gap-5 justify-content-around p-5">
+            <div class="card rounded-4 bg-tertiary">
+              <img src="./src/assets/udam-logo.png" class="m-3 rounded-4" alt="Logo Rise">
+              <div class="card-body">
+                <h5 class="card-title fw-semibold mb-4">Ensino de lógica de programação com Scratch</h5>
+                <p class="card-text text-dark">
+                  Seminars taught at UDAM - Rio Claro, aimed at developing computational 
+                  logic in adolescents using the Scratch tool for game creation. At the end of the 
+                  semester, the students were able to build their first game, stimulating their 
+                  reasoning and teaching them programming logic.
+                </p>
+              </div>
+            </div>
+            <div class="card rounded-4 bg-tertiary">
+              <img src="./src/assets/pet-saude-logo.jpg" class="m-3 rounded-4" alt="Logo Rise">
+              <div class="card-body">
+                <h5 class="card-title fw-semibold mb-4">PET-Saúde: Informação e Saúde Digital</h5>
+                <p class="card-text text-dark">
+                  Scholarship recipient in the project, developed in partnership with the Botucatu School of Medicine (FMB), 
+                  the Ministry of Health, and the Ministry of Education. The project aims to build solutions that help the 
+                  population and offer a digital transformation of the SUS.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <br>
+
+      <section id="About" class="mt-5">
+
+        <div class="container py-5">
+          <div class="languages text-center">
+            <h1 class="text-tertiary fw-semibold">Languages</h1>
+            <div class="d-flex flex-wrap justify-content-center gap-5 my-5">
+
+              <img 
+                align="left"
+                alt="Javascript"
+                title="Javascript"
+                width="90"
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" 
+              />
+
+              <img 
+                align="left"
+                alt="Typescript"
+                title="Typescript"
+                width="90"
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" 
+              />
+
+              <img 
+                align="left"
+                alt="Java"
+                title="Java"
+                width="90"
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" 
+              />
+
+              <img 
+                align="left"
+                alt="Python"
+                title="Python"
+                width="90"
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" 
+              />
+
+              <img 
+                align="left"
+                alt="C"
+                title="C"
+                width="90"
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-original.svg" 
+              />
+
+              <img 
+                align="left"
+                alt="C++"
+                title="C++"
+                width="90"
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg" 
+              />
+      
+            </div>
+          </div>
+
+          <br>
+
+          <div class="technologies text-center">
+            <h1 class="text-tertiary fw-semibold mt-5">Technologies</h1>
+            <div class="d-flex flex-wrap justify-content-center gap-5 mt-5">
+              <img 
+                align="left"
+                alt="HTML"
+                title="HTML"
+                width="90"
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" 
+              />
+
+              <img 
+                align="left"
+                alt="CSS"
+                title="CSS"
+                width="90"
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" 
+              />
+
+              <img 
+                align="left"
+                alt="Node.js"
+                title="Node.js"
+                width="90"
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-plain-wordmark.svg" 
+              />
+
+              <img 
+                align="left"
+                alt="PostgreSQL"
+                title="PostgreSQL"
+                width="90"
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-plain.svg" 
+              />
+
+              <img 
+                align="left"
+                alt="Bootstrap"
+                title="Bootstrap"
+                width="90"
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg" 
+              />
+
+              <img 
+                align="left"
+                alt="Bootstrap"
+                title="Bootstrap"
+                width="90"
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sass/sass-original.svg" 
+              />
+
+              <img 
+                align="left"
+                alt="Git"
+                title="Git"
+                width="90"
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" 
+              />
+            </div>
+          </div> 
+        </div>      
+
+      </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+
+    </footer>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
