@@ -13649,4 +13649,32 @@ textarea.form-control-lg {
   width: 30rem;
 }
 
+@media screen and (max-width: 768px) {
+  #Education p {
+    margin-right: 2rem;
+  }
+  #AcademicGroups .card {
+    width: 25rem;
+  }
+  #AcademicProjects .card {
+    width: 25rem;
+  }
+}
+@media screen and (max-width: 529px) {
+  #Home img {
+    width: 20rem;
+    height: 20rem;
+  }
+  #Education img {
+    width: 200px;
+    height: 200px;
+  }
+  #AcademicGroups .card {
+    width: 16rem;
+  }
+  #AcademicProjects .card {
+    width: 16rem;
+  }
+}
+
 /*# sourceMappingURL=styles.css.map */
