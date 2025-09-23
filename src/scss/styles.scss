@@ -1,4 +1,4 @@
-@import 'bootstrap';
+@import './bootstrap';
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins');
 
@@ -6,53 +6,155 @@
   font-family: "Poppins", sans-serif;
 }
 
-.card {
-  width: 30rem;
+.navbar.bg-dark {
+  background-color: rgba(11, 14, 19, 0.85) !important;
+}
+
+.navbar {
+  .nav-link {
+    transition: 0.3s;
+  }
+
+  .nav-link:hover {
+    color: #64c5fd;
+  }
+}
+
+.icon-blue {
+  filter: drop-shadow(0 0 1.2px rgba(160, 160, 160, 0.7));
+}
+
+main {
+  margin-top: 8rem;
+}
+
+.photo-shadow {
+  box-shadow: 0 0 15px 5px rgba(24, 148, 250, 0.55); 
+  border-radius: 50%;
+  transition: box-shadow 0.3s ease;
+}
+
+.photo-shadow:hover {
+  box-shadow: 0 0 25px 10px rgba(24, 148, 250, 0.7);
+}
+
+.card-hover {
+  transition: transform 0.3s ease;
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.05); 
+  }
+}
+
+#scrollspyEducation img {
+  transition: transform 0.3s ease;
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.1); 
+  }
+}
+
+#scrollspySkills img {
+  transition: transform 0.3s ease;
+  cursor: pointer;
+
+  &:hover {
+    transform: translateY(-10px); 
+  }
+}
+
+i, btn {
+  transition: 0.3s;
+}
+
+i:hover {
+  color: #1894fa;
+}
+
+#contactForm {
+  max-width: 40rem;
+}
+
+#scrollspyProjects {
+  i {
+    font-size: 3rem;
+  }
+}
+
+#scrollspyAcademicGroups {
+  .card {
+    width: 30rem;
+  }
+}
+
+@media screen and (min-width: 1200px)
+{
+  .card {
+    h5 { font-size: x-large; }
+
+    p { font-size: large; }
+  }
+}
+
+@media screen and (min-width: 992px)
+{
+  .card-img-custom {
+    max-width: 25rem;
+    height: auto;
+    object-fit: contain;
+  }
 }
 
 @media screen and (max-width: 768px) {
   
-  #Education {
+  #scrollspyExperiences {
+    .cards {
+      display: grid;
+      justify-content: center;
+    }
+    
+    .card {
+      width: 27rem;
+    }
+  }
+
+  #scrollspyEducation {
     p {
       margin-right: 2rem;
     }
   }
 
-  #AcademicGroups {
+  #scrollspyAcademicGroups {
     .card {
-      width: 25rem;
-    }
-  }
-
-  #AcademicProjects {
-    .card {
-      width: 25rem;
+      width: 27rem;
     }
   }
 }
 
 @media screen and (max-width: 529px) {
-  #Home {
+  #scrollspyHome {
     img {
-      width: 20rem;
-      height: 20rem;
+      width: 15rem;
+      height: 15rem;
     }
   }
 
-  #Education {
+  #scrollspyExperiences {
+    .card {
+      width: 18rem;
+    }
+  }
+
+  #scrollspyEducation {
     img {
       width: 200px;
       height: 200px;
     }
   }
 
-  #AcademicGroups {
-    .card {
-      width: 16rem;
-    }
-  }
-
-  #AcademicProjects {
+  #scrollspyAcademicGroups {
     .card {
       width: 16rem;
     }

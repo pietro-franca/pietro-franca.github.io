@@ -11,25 +11,35 @@
 
     <!-- Header -->
     <header>
-      <nav id="navbar-header" class="navbar navbar-expand-lg p-4 mb-lg-5">
+      <nav id="navbar-header" class="navbar navbar-expand-lg fixed-top bg-dark p-4 mb-lg-5">
         <div class="container">
-          <a class="navbar-brand text-primary fw-semibold" href="#">Pietro</a>
+          <a class="navbar-brand text-primary fw-semibold" href="#scrollspyHome">Pietro</a>
 
           <div class="navbar-items">
-            <ul class="d-flex list-unstyled gap-md-5 gap-3 m-0 fw-medium">
+            <ul class="d-flex flex-wrap justify-content-around list-unstyled gap-md-5 gap-3 m-0 fw-medium">
               <li class="nav-item text-tertiary">
                 <a class="nav-link active" href="#scrollspyHome">
                   Home
                 </a>
               </li>
               <li class="nav-item text-light">
-                <a class="nav-link" href="#scrollspyAbout">
-                  About
+                <a class="nav-link" href="#scrollspyExperiences">
+                  Experiences
+                </a>
+              </li>
+              <li class="nav-item text-light">
+                <a class="nav-link" href="#scrollspySkills">
+                  Skills
                 </a>
               </li>
               <li class="nav-item text-light">
                 <a class="nav-link" href="#scrollspyProjects">
                   Projects
+                </a>
+              </li>
+              <li class="nav-item text-light">
+                <a class="nav-link" href="#scrollspyEducation">
+                  Education
                 </a>
               </li>
               <li class="nav-item text-light">
@@ -46,7 +56,7 @@
     <!-- Main -->
     <main data-bs-spy="scroll" data-bs-target="#navbar-header" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" tabindex="0">
 
-      <section id="Home" class="container d-flex flex-grow-1 my-5">
+      <section id="scrollspyHome" class="container d-flex flex-grow-1 my-5">
         <div class="row">
           <div class="col-lg-6 order-lg-1 order-2 mt-5">
             <h1 class="text-light fw-bold">I'm Pietro Franca</h1>
@@ -76,11 +86,11 @@
                 </a>
               </li>
             </ul>
-            <a href="./src/assets/resume-ptbr.pdf" download class="btn bg-primary text-dark fw-semibold rounded-4 px-4 py-2 mt-2"> Download Resume</a>
+            <a href="./src/assets/resume-ptbr.pdf" download class="btn btn-primary text-dark fw-semibold rounded-4 px-4 py-2 mt-2"> Download Resume</a>
           </div>
 
           <div class="col-lg-6 order-lg-2 text-lg-end order-1 mb-5 text-center">
-            <img src="./src/assets/foto-perfil.jpg" width="420" height="420" class="rounded-circle object-fit-cover shadow" alt="">
+            <img src="./src/assets/foto-perfil.jpg" width="420" height="420" class="rounded-circle object-fit-cover photo-shadow" alt="">
           </div>
         </div>
   
@@ -88,58 +98,16 @@
 
       <br>
 
-      <section id="Education" class="mt-5 bg-tertiary">
+      <section id="scrollspyExperiences" class="bg-primary">
         <div class="container py-5">
-          <h1 class="text-lg-end text-center text-dark fw-bold">Education</h1>
-          <div class="d-lg-flex d-grid gap-3">
-            <p class="text-lg-end text-dark fs-5 mt-5 ms-5 order-lg-2 order-1">
-              I am a Computer Science undergraduate at UNESP - Rio Claro, 
-              where I have been consolidating concepts of algorithms, data 
-              structures, and software engineering. During my academic career, 
-              I have actively participated in extension and development projects, 
-              collaborating in teams, improving interpersonal skills, and exploring 
-              new technologies and frameworks.
-            </p>
-            <img src="./src/assets/unesp-logo.png" width="250" height="250"
-                class="object-fit-contain mx-auto my-4 order-lg-1 order-2"
-                alt="Logo UNESP">
-          </div>
-        </div>
-      </section>
-
-      <section id="AcademicGroups" class="bg-blue-400">
-        <div class="container py-5">
-          <h1 class="text-lg-start ms-lg-5 ms-xl-5 ps-xl-5 text-center text-dark fw-bold py-4">Academic Groups</h1>
-          <div class="cards d-md-flex d-grid gap-5 justify-content-around p-5">
-            <div class="card rounded-4 bg-tertiary">
-              <img src="./src/assets/rise-logo.webp" class="m-3 rounded-4" alt="Logo Rise">
-              <div class="card-body">
-                <p class="card-text text-dark">
-                  RISE is a space for discussion and analysis of information security topics.
-                </p>
-              </div>
-            </div>
-            <div class="card rounded-4 bg-tertiary">
-              <img src="./src/assets/logo-g3x.png" class="m-3 rounded-4" alt="Logo Rise">
-              <div class="card-body">
-                <p class="card-text text-dark">
-                  G3X is dedicated to researching and creating games
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="AcademicProjects" class="bg-blue-500">
-        <div class="container py-5">
-          <h1 class="text-lg-end me-lg-5 me-xl-5 pe-xl-5 text-center text-dark fw-bold py-4">Academic Projects</h1>
-          <div class="cards d-lg-flex d-grid gap-5 justify-content-around p-5">
-            <div class="card rounded-4 bg-tertiary">
-              <img src="./src/assets/udam-logo.png" class="m-3 rounded-4" alt="Logo Rise">
-              <div class="card-body">
-                <h5 class="card-title fw-semibold mb-4">Ensino de lógica de programação com Scratch</h5>
-                <p class="card-text text-dark">
+          <h1 class="text-lg-end me-lg-5 me-xl-5 pe-xl-5 text-center text-dark fw-bold py-4">Experiences</h1>
+          <div class="cards row d-grid gap-5 p-5">
+            
+            <div class="card card-hover rounded-4 p-3 shadow bg-tertiary d-flex flex-column flex-lg-row">
+              <img src="./src/assets/udam-logo.png" class="m-3 shadow rounded-4 img-fluid card-img-custom" alt="Logo Rise">
+              <div class="card-body my-xl-3">
+                <p class="card-title h5 h4-xl fw-semibold mb-4 text-dark">Teaching programming logic to teenagers (2024)</p>
+                <p class="card-text h6-xl text-dark">
                   Seminars taught at UDAM - Rio Claro, aimed at developing computational 
                   logic in adolescents using the Scratch tool for game creation. At the end of the 
                   semester, the students were able to build their first game, stimulating their 
@@ -147,14 +115,14 @@
                 </p>
               </div>
             </div>
-            <div class="card rounded-4 bg-tertiary">
-              <img src="./src/assets/pet-saude-logo.jpg" class="m-3 rounded-4" alt="Logo Rise">
-              <div class="card-body">
-                <h5 class="card-title fw-semibold mb-4">PET-Saúde: Informação e Saúde Digital</h5>
-                <p class="card-text text-dark">
+            <div class="card card-hover rounded-4 p-3 shadow bg-tertiary d-flex gap-3 flex-column flex-lg-row">
+              <img src="./src/assets/pet-saude-logo.jpg" class="m-3 shadow rounded-4 img-fluid card-img-custom order-lg-2" alt="Logo Rise">
+              <div class="card-body my-xl-3 order-lg-1">
+                <p class="card-title h5 h4-xl fw-semibold mb-4 text-dark">PET-Saúde: Digital Health and Information (2025-2027)</p>
+                <p class="card-text h6-xl text-dark">
                   Scholarship recipient in the project, developed in partnership with the Botucatu School of Medicine (FMB), 
                   the Ministry of Health, and the Ministry of Education. The project aims to build solutions that help the 
-                  population and offer a digital transformation of the SUS.
+                  population and offer a digital transformation of the SUS (Brazilian public healthcare system).
                 </p>
               </div>
             </div>
@@ -164,11 +132,11 @@
 
       <br>
 
-      <section id="About" class="mt-5">
+      <section id="scrollspySkills" class="mt-5">
 
         <div class="container py-5">
           <div class="languages text-center">
-            <h1 class="text-tertiary fw-semibold">Languages</h1>
+            <h2 class="text-tertiary fw-semibold">Languages</h2>
             <div class="d-flex flex-wrap justify-content-center gap-5 my-5">
 
               <img 
@@ -225,7 +193,7 @@
           <br>
 
           <div class="technologies text-center">
-            <h1 class="text-tertiary fw-semibold mt-5">Technologies</h1>
+            <h2 class="text-tertiary fw-semibold mt-5">Technologies</h2>
             <div class="d-flex flex-wrap justify-content-center gap-5 mt-5">
               <img 
                 align="left"
@@ -249,6 +217,23 @@
                 title="Node.js"
                 width="90"
                 src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-plain-wordmark.svg" 
+              />
+
+              <img 
+                align="left"
+                alt="Express.js"
+                title="Express.js"
+                width="90"
+                class="icon-blue"
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg" 
+              />
+
+              <img 
+                align="left"
+                alt="Prisma ORM"
+                title="Prisma ORM"
+                width="90"
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/prisma/prisma-original.svg" 
               />
 
               <img 
@@ -288,13 +273,245 @@
 
       </section>
 
+      <br>
+
+      <section id="scrollspyProjects">
+        <div class="container py-5">
+          <h1 class="text-primary text-center fw-semibold">Projects</h1>
+          <div class="container">
+            <div id="carouselMulti" class="carousel slide my-5">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselMulti" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselMulti" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselMulti" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselMulti" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselMulti" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                <button type="button" data-bs-target="#carouselMulti" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                <button type="button" data-bs-target="#carouselMulti" data-bs-slide-to="6" aria-label="Slide 7"></button>
+              </div>
+
+              <div class="carousel-inner px-lg-5">
+                <div class="carousel-item active">
+                  <div class="bg-dark d-flex justify-items-center p-lg-5">
+                    <div class="card w-100 rounded-4 shadow bg-tertiary p-3 mx-lg-5 my-lg-3">
+                      <img src="./src/assets/carousel/Epidemias implementação.gif" class="d-block m-lg-3 rounded-4" alt="Edpidemic Spread Simulation">
+                      <div class="card-body w-100 mx-auto d-lg-flex justify-content-center gap-lg-3 d-grid">
+                        <a href="https://github.com/pietro-franca/epidemic-spread-simulation-with-graphs" class="btn text-dark"
+                          aria-label="Github">
+                          <i class="bi bi-github"></i>
+                        </a>
+                        <p class="card-text text-lg-start text-center fs-lg-5 text-dark align-content-center m-0">
+                          Python program that simulates the spread of epidemics in graphs
+                        </p>
+                        <br> <br>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="bg-dark d-flex justify-items-center p-lg-5">
+                    <div class="card w-100 rounded-4 shadow bg-tertiary p-2 mx-lg-5 my-lg-3">
+                      <img src="./src/assets/carousel/API - Leads Management.gif" class="d-block m-lg-3 rounded-4" alt="Leads Management API">
+                      <div class="card-body w-100 mx-auto d-lg-flex justify-content-center gap-lg-3 d-grid">
+                        <a href="https://github.com/pietro-franca/leads-management-api" class="btn text-dark"
+                          aria-label="Github">
+                          <i class="bi bi-github"></i>
+                        </a>
+                        <p class="card-text text-lg-start text-center fs-lg-5 text-dark align-content-center m-0">
+                          An API for managing leads, groups and campaigns made in Typescript
+                        </p>
+                        <br> <br>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="bg-dark d-flex justify-items-center p-lg-5">
+                    <div class="card w-100 rounded-4 shadow bg-tertiary p-2 mx-lg-5 my-lg-3">
+                      <img src="./src/assets/carousel/B-Productive.png" class="d-block m-lg-3 rounded-4" alt="B-Productive Task Manager">
+                      <div class="card-body w-100 mx-auto d-lg-flex justify-content-center gap-lg-3 d-grid">
+                        <a href="https://github.com/pietro-franca/B-Productive-task-manager" class="btn text-dark"
+                          aria-label="Github">
+                          <i class="bi bi-github"></i>
+                        </a>
+                        <p class="card-text text-lg-start text-center fs-lg-5 text-dark align-content-center m-0">
+                          B-Productive: a Task Manager made in Express.js and EJS
+                        </p>
+                        <br> <br>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="bg-dark d-flex justify-items-center p-lg-5">
+                    <div class="card w-100 rounded-4 shadow bg-tertiary p-2 mx-lg-5 my-lg-3">
+                      <img src="./src/assets/carousel/Sistema Gestão Escolar.gif" class="d-block m-lg-3 rounded-4" alt="School Management System">
+                      <div class="card-body w-100 mx-auto d-lg-flex justify-content-center gap-lg-3 d-grid">
+                        <a href="https://github.com/pietro-franca/school-management-system-oop" class="btn text-dark"
+                          aria-label="Github">
+                          <i class="bi bi-github"></i>
+                        </a>
+                        <p class="card-text text-lg-start text-center fs-lg-5 text-dark align-content-center m-0">
+                          School management system using OOP in Java
+                        </p>
+                        <br> <br>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="bg-dark d-flex justify-items-center p-lg-5">
+                    <div class="card w-100 rounded-4 shadow bg-tertiary p-2 mx-lg-5 my-lg-3">
+                      <img src="./src/assets/carousel/API - Books Loan.gif" class="d-block m-lg-3 rounded-4" alt="Book Loan API">
+                      <div class="card-body w-100 mx-auto d-lg-flex justify-content-center gap-lg-3 d-grid">
+                        <a href="https://github.com/pietro-franca/book-loan-api" class="btn text-dark"
+                          aria-label="Github">
+                          <i class="bi bi-github"></i>
+                        </a>
+                        <p class="card-text text-lg-start text-center fs-lg-5 text-dark align-content-center m-0">
+                          A simple API for managing book loans and returns in a library system
+                        </p>
+                        <br> <br>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="bg-dark d-flex justify-items-center p-lg-5">
+                    <div class="card w-100 rounded-4 shadow bg-tertiary p-2 mx-lg-5 my-lg-3">
+                      <img src="./src/assets/carousel/Grafos implementação.png" class="d-block m-lg-3 rounded-4" alt="Graphs Implementation in C">
+                      <div class="card-body w-100 mx-auto d-lg-flex justify-content-center gap-lg-3 d-grid">
+                        <a href="https://github.com/pietro-franca/graphs-implementation" class="btn text-dark"
+                          aria-label="Github">
+                          <i class="bi bi-github"></i>
+                        </a>
+                        <p class="card-text text-lg-start text-center fs-lg-5 text-dark align-content-center m-0">
+                          Graphs: matrix representation and some of its algorithms in C
+                        </p>
+                        <br> <br>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="bg-dark d-flex justify-items-center p-lg-5">
+                    <div class="card w-100 rounded-4 shadow bg-tertiary p-2 mx-lg-5 my-lg-3">
+                      <img src="./src/assets/carousel/Blog Express.png" class="d-block m-lg-3 rounded-4" alt="Blog Express">
+                      <div class="card-body w-100 mx-auto d-lg-flex justify-content-center gap-lg-3 d-grid">
+                        <a href="https://github.com/pietro-franca/blog-express" class="btn text-dark"
+                          aria-label="Github">
+                          <i class="bi bi-github"></i>
+                        </a>
+                        <p class="card-text text-lg-start text-center fs-lg-5 text-dark align-content-center m-0">
+                          Blog Express: a simple blog structure using Express.js and EJS
+                        </p>
+                        <br> <br>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselMulti" data-bs-slide="prev">
+                <i class="bi bi-arrow-left-circle-fill fs-1 text-primary"></i>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselMulti" data-bs-slide="next">
+                <i class="bi bi-arrow-right-circle-fill fs-1 text-primary"></i>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <br>
+
+      <section id="scrollspyEducation" class="mt-5 bg-tertiary">
+        <div class="container py-5">
+          <h1 class="text-lg-end text-center text-dark fw-bold">Education</h1>
+          <div class="d-lg-flex d-grid gap-3">
+            <p class="text-lg-end text-dark fs-5 mt-5 ms-5 order-lg-2 order-1">
+              I am a Computer Science undergraduate at UNESP - Rio Claro, 
+              where I have been consolidating concepts of algorithms, data 
+              structures, and software engineering. During my academic career, 
+              I have actively participated in extension and development projects, 
+              collaborating in teams, improving interpersonal skills, and exploring 
+              new technologies and frameworks.
+            </p>
+            <img src="./src/assets/unesp-logo.png" width="250" height="250"
+                class="object-fit-contain mx-auto my-4 order-lg-1 order-2"
+                alt="Logo UNESP">
+          </div>
+        </div>
+      </section>
+
+      <section id="scrollspyAcademicGroups" class="bg-blue-400">
+        <div class="container py-5">
+          <h1 class="text-lg-start ms-lg-5 ms-xl-5 ps-xl-5 text-center text-dark fw-bold py-4">Academic Groups</h1>
+          <div class="cards d-md-flex d-grid gap-5 justify-content-around p-5">
+            <div class="card card-hover rounded-4 shadow bg-tertiary">
+              <img src="./src/assets/rise-logo.webp" class="m-3 rounded-4" alt="Logo Rise">
+              <div class="card-body">
+                <p class="card-text text-dark">
+                  RISE is a space for discussion and analysis of information security topics.
+                </p>
+              </div>
+            </div>
+            <div class="card card-hover rounded-4 shadow bg-tertiary">
+              <img src="./src/assets/logo-g3x.png" class="m-3 rounded-4" alt="Logo G3X">
+              <div class="card-body">
+                <p class="card-text text-dark">
+                  G3X is dedicated to researching and creating games
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <br>
+
+      <section id="scrollspyContact">
+        <div class="container py-5">
+          <h1 class="text-primary fw-semibold text-center mb-5">Contact Me</h1>
+    
+          <form id="contactForm" class="mx-auto">
+            <div class="mb-3">
+              <label for="name" class="form-label text-light">Name</label>
+              <input type="text" class="form-control bg-dark text-light rounded-3" id="name" name="name" placeholder="Your Name" required>
+            </div>
+
+            <div class="mb-3">
+              <label for="email" class="form-label text-light">Email</label>
+              <input type="email" class="form-control bg-dark text-light rounded-3" id="email" name="email" placeholder="Your Email" required>
+            </div>
+
+            <div class="mb-3">
+              <label for="message" class="form-label text-light">Message</label>
+              <textarea class="form-control bg-dark text-light rounded-3" id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary mt-3 p-2 w-50 rounded-3">Send Message</button>
+          </form>
+
+          <div id="formAlert" class="alert mt-3 d-none" role="alert"></div>
+        </div>
+      </section>
+
     </main>
+
+    <br>
 
     <!-- Footer -->
     <footer>
-
+      <div class="container my-5">
+        <p class="text-center text-secondary">&copy; 2025 Pietro Franca. Todos os direitos reservados.</p>
+      </div>
     </footer>
 
-    <script type="module" src="/src/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script type="module" src="./src/main.js"></script>
   </body>
 </html>
