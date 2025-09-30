@@ -1,30 +1,37 @@
-emailjs.init("3c6FPHGZ5rZtxcToJ");
-
 document
   .getElementById("contactForm")
   .addEventListener("submit", function (event) {
     event.preventDefault();
 
-    const serviceID = "service_lu6su1k";
-    const templateID = "template_ahj2x0q";
+    const name = document.getElementById("name").value;
+    const email = document.getElementById("email").value;
+    const message = document.getElementById("message").value;
 
-    emailjs.sendForm(serviceID, templateID, this).then(
-      () => {
-        document
-          .getElementById("formAlert")
-          .classList.remove("d-none", "alert-danger");
-        document.getElementById("formAlert").classList.add("alert-success");
-        document.getElementById("formAlert").innerText =
-          "Message sent successfully!";
-        this.reset();
-      },
-      (err) => {
-        document
-          .getElementById("formAlert")
-          .classList.remove("d-none", "alert-success");
-        document.getElementById("formAlert").classList.add("alert-danger");
-        document.getElementById("formAlert").innerText =
-          "Failed to send message. Please try again.";
+    grecaptcha.ready(async () => {
+      try {
+        // 🔑 Pegar token invisível do reCAPTCHA
+        const token = await grecaptcha.execute("6LfEUNUrAAAAALVPTD0FOqXJ_4w3BrQywseHYC-z", {
+          action: "submit",
+        });
+
+        // 🔑 Enviar para backend
+        const response = await fetch("http://localhost:5000/send-email", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ name, email, message, token }),
+        });
+
+        const result = await response.json();
+
+        if (result.success) {
+          alert("Mensagem enviada com sucesso!");
+          this.reset();
+        } else {
+          alert("Erro: " + result.error);
+        }
+      } catch (err) {
+        console.error("Erro:", err);
+        alert("Falha ao enviar mensagem.");
       }
-    );
+    });
   });
