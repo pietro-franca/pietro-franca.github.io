@@ -13649,11 +13649,15 @@ textarea.form-control-lg {
   background-color: rgba(11, 14, 19, 0.85) !important;
 }
 
+.navbar .dropdown-item,
 .navbar .nav-link {
   transition: 0.3s;
 }
 .navbar .nav-link:hover {
   color: #64c5fd;
+}
+.navbar .dropdown-item:hover {
+  background-color: rgba(0, 153, 255, 0.3);
 }
 
 .icon-blue {
@@ -13680,6 +13684,10 @@ main {
 }
 .card-hover:hover {
   transform: scale(1.05);
+}
+
+#form-honeypot-input {
+  display: none;
 }
 
 #scrollspyEducation img {
